@@ -18,12 +18,12 @@ This presentation will include a demo where Quickwit will ingest logs and traces
 
 ## Git repo
 
-* Repo principal: https://gitlab.comwork.io/comwork_public/talks/forkit-quickwit
+* Main repo: https://gitlab.comwork.io/comwork_public/talks/forkit-quickwit
 * Github mirror: https://github.com/idrissneumann/forkit-quickwit
 
 ## Demo
 
-Follow this [README](./demo/README.md) to reproduce the demo
+Follow this [README](./demo/README.md) to reproduce the demo.
 
 ## Slides
 
