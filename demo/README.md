@@ -80,10 +80,10 @@ And a Jaeger datasource with:
 
 ## Hands-on
 
-You can also add this [mapping](./mapping_metrics.json) like this:
+You can also add this [mapping](./mapping_imalive_metrics.json) like this:
 
 ```shell
-curl -X POST localhost:7280/api/v1/indexes -H "Content-Type: application/json" -H "Accept: application/json" -d '@mapping_metrics.json' -v
+curl -X POST localhost:7280/api/v1/indexes -H "Content-Type: application/json" -H "Accept: application/json" -d '@mapping_imalive_metrics.json' -v
 ```
 
 Then try to push imalive metrics into this new index through a new vector pipeline.

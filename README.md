@@ -1,38 +1,30 @@
-# Quickwit BDX/IO
+# Quickwit Fork-IT Tunis 2025
 
-## Titre
+## Title
 
-Découvrons ensemble la relève de l'observabilité avec les logs et traces : Quickwit
+Let's discover together the next generation of observability with logs and traces: Quickwit
 
 ## Abstract
 
-Aujourd'hui sur les projets cloud native, on dispose systématiquement d'une stack d'observabilité en place. Il en existe de nombreuses (Elasticstack, Graylog, Grafana...). Toutes ces stacks, à l'exception de solutions SaaS onéreuses telles que Datadog, reposent le plus souvent sur deux solutions pour le stockage et la recherche des logs: Elasticsearch ou Grafana Loki.
+Today, in cloud-native projects, an observability stack is systematically in place. There are many such stacks (Elasticstack, Graylog, Grafana…). All those stacks, except for SaaS solutions like Datadog, rely on two solutions for log storage and search: Elasticsearch or Grafana Loki.
 
-Ces deux solutions présentent toute deux des avantages et inconvénients : d'un côté Elasticsearch repose sur un moteur de recherche très puissant (Apache Lucene) mais consomme énormément de ressources pour maintenir des index performants, notamment il faut un noeud principal et deux replicas et tout est stocké sur du disque bloc storage (SSD), ce qui peut devenir excessivement cher particulièrement sur du cloud public. De l'autre Loki très rapide à l'ingestion et moins couteux car stock les logs sur de l'object storage mais ne dispose pas de la puissance du moteur d'indexation d'elastic ce qui fait que les recherches sont souvent lentes et complexes.
+Both solutions have their pros and cons: on one hand, Elasticsearch is based on a very powerful search engine (Apache Lucene) but consumes a significant amount of resources to maintain performant indexes. It requires a primary node and replicas, with all data stored on block storage (SSD), which can become excessively expensive. On the other hand, Loki is very fast at ingestion and less costly because it stores logs on object storage but lacks the indexing power of Elasticsearch, making searches often slow and complex.
 
-Dans cette présentation, nous allons parler d'une nouvelle solution qui réunis le meilleur des deux mondes, Quickwit, et expliquer comment elle y est parvenue : en ré-écrivant un moteur de recherche comparable à Lucene avec de hautes performances et en utilisant le gain pour stocker les données indexée dans de l'object storage, ce qui le rend complètement stateless et plus facile à opérer. On arrive à des performances similaires à celles d'Elasticsearch voire les surpassent avec des coûts d'infrastructure qui sont très largement réduits.
+In this presentation, we’ll present Quickwit which combines the best of both worlds. We’ll explain how it achieves this by rewriting a search engine comparable to Lucene with high performance and leveraging the gains to store indexed data in object storage.
 
-Nous verrons également dans cette présentation que Quickwit peut également servir de backend pour stocker des traces via OpenTelemetry et est compatible avec Jaeger UI ce qui permet également conserver ses traces durablement dans le temps grace à la promesse de l'object storage. 
+We’ll also see in this presentation that Quickwit can serve as a backend for storing traces via OpenTelemetry and is compatible with Jaeger UI, allowing traces to be stored durably over time.
 
-Cette présentation s'accompagnera d'une démo dans laquelle Quickwit ingèrera des logs et traces en provenance d'une application Python via OTLP/grpc et on présentera des dashboards avec le plugin Grafana permettant de mettre en corrélation des logs et des traces et se substituer à un APM (_Application Performance Monitoring_, outil pour mesurer la performance de vos applications).
-
-## Elevator pitch
-
-Pour l'instant ça serait une première édition de ce talk en public mais déjà donné à plusieurs reprises avec succès dans des organisations internes.
-
-Parmi les références on pourra citer quelques benchmark et storytelling disponibles ici :
-* "How Binance built a 100PB log service with Quickwit": https://quickwit.io/blog/quickwit-binance-story
-* "Benchmarking Quickwit vs. Loki": https://quickwit.io/blog/benchmarking-quickwit-loki
+This presentation will include a demo where Quickwit will ingest logs and traces from a Python application via OTLP/grpc. We’ll showcase dashboards with the Grafana plugin, enabling the correlation of logs and traces
 
 ## Git repo
 
-* Repo principal: https://gitlab.comwork.io/comwork_public/talks/bdx-quickwit
-* Github mirror: https://github.com/idrissneumann/bdx-quickwit
+* Repo principal: https://gitlab.comwork.io/comwork_public/talks/forkit-quickwit
+* Github mirror: https://github.com/idrissneumann/forkit-quickwit
 
 ## Demo
 
-Suivre ce [README](./demo/README.md) pour reproduire la démo.
+Follow this [README](./demo/README.md) to reproduce the demo
 
 ## Slides
 
-Les slides sont disponibles [ici](./slides.pdf).
+The slides are available [here](./slides.pdf).
