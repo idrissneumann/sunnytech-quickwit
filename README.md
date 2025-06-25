@@ -1,4 +1,4 @@
-# Quickwit Voxxed Luxembourg 2025
+# Quickwit SunnyTech 2025
 
 ## Titre
 
@@ -18,8 +18,8 @@ Cette présentation s'accompagnera d'une démo dans laquelle Quickwit ingèrera 
 
 ## Git repo
 
-* Main repo: https://gitlab.comwork.io/comwork_public/talks/voxxedlu-quickwit
-* Github mirror: https://github.com/idrissneumann/voxxedlu-quickwit
+* Main repo: https://gitlab.comwork.io/comwork_public/talks/sunnytech-quickwit
+* Github mirror: https://github.com/idrissneumann/sunnytech-quickwit
 
 ## Démo
 
