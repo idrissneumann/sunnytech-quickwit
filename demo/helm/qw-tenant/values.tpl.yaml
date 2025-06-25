@@ -47,12 +47,6 @@ opentelemetry-collector:
         endpoint: "quickwit-indexer.{{ tenant_name }}.svc.cluster.local:7281"
         tls:
           insecure: true
-      otlphttp/victoriametrics:
-        compression: gzip
-        encoding: proto
-        endpoint: http://release-name-victoria-server.{{ tenant_name }}.svc.cluster.local:8428/opentelemetry
-        tls:
-          insecure: true
       debug: {}
     service:
       pipelines:
